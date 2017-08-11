@@ -1,14 +1,14 @@
 #include <stdio.h>
 int main()
 {
-    int n, num, rev = 0;
+    int s, num, rev = 0;
     printf("Enter any number to check palindrome: ");
-    scanf("%d", &n);
-    num = n;
-    while(n != 0)
+    scanf("%d", &s);
+    num = s;
+    while(s != 0)
     {
-        rev = (rev * 10) + (n % 10);
-        n = n / 10;
+        rev = (rev * 10) + (s % 10);
+        s = s / 10;
         }
     if(rev == num)
     {
