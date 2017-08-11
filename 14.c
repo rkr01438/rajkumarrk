@@ -1,26 +1,15 @@
 #include <stdio.h>
-int main()
+void main()
 {
-    int low, high, r, f;
-    printf("Enter two numbers(intervals): ");
-    scanf("%d %d", &low, &high);
-    printf("Prime numbers between %d and %d are: ", low, high);
-    while (low < high)
-    {
-        f = 0;
 
-        for(r = 2; r <= low/2; ++r)
+    int num,r =20,s=40;
+    clrscr();
+    printf("Print Odd Numbers in a given range r to s:\n");
+    for (num = r; num <= s; num++)
         {
-            if(low % r == 0)
-            {
-                f = 1;
-                break;
-            }
-        }
+               if (num % 2 == 1)
 
-        if (f == 0)
-            printf("%d ", low);
-        ++low;
-    }
-    return 0;
+                  printf ("%d ", num);
+         }
+                getch();
 }
