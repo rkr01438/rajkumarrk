@@ -1,13 +1,13 @@
 #include <stdio.h>
 int main()
 {
-    int i, num, isPrime;
+    int i, n, isPrime;
     isPrime = 1;
     printf("Enter any number to check prime: ");
-    scanf("%d", &num);
-    for(i=2; i<=num/2; i++)
+    scanf("%d", &n);
+    for(i=2; i<=n/2; i++)
     {
-        if(num%i==0)
+        if(n%i==0)
         {
             isPrime = 0;
             break;
@@ -15,11 +15,11 @@ int main()
     }
     if(isPrime ==1)
     {
-        printf("%d is prime number", num);
+        printf("%d is prime number", n);
     }
     else
     {
-        printf("%d is composite number", num);
+        printf("%d is composite number", n);
     }
     return 0;
 }
